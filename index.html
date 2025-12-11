@@ -1,0 +1,101 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>CSS Selectors</title> 
+    <!-- Enlace a Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- Enlace a Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Enlace al CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!--favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📄</text></svg>">
+</head>
+<body> 
+    
+    <!-- Título principal de la página -->
+    <h1><i class="fa-solid fa-code"></i> CSS Selectors</h1>
+    
+    <!-- Párrafo introductorio -->
+    <p>A CSS selector selects the HTML element(s) you want to style.</p>
+    
+    <!-- Contenedor -->
+    <div class="selectors">
+        <h2>CSS Selectors</h2>
+        <p>CSS selectors are used to "find" (or select) the HTML elements you want to style.</p>
+        <p>We can divide CSS selectors into five categories:</p>
+        
+        <!-- ul con las categorías de selectores CSS -->
+        <ul>
+            <li>Simple selectors (select elements based on name, id, class)</li>
+            
+            <!-- Enlace a la documentación de Combinator selectors -->
+            <li><a href="https://www.w3schools.com/css/css_combinators.asp" target="_blank">Combinator selectors</a> (select elements based on a specific relationship between them)</li>
+            
+            <!-- Enlace a la documentación de Pseudo-class selectors -->
+            <li><a href="https://www.w3schools.com/css/css_pseudo_classes.asp" target="_blank">Pseudo-class selectors</a> (select elements based on a certain state)</li>
+            
+            <!-- Enlace a la documentación de Pseudo-elements selectors -->
+            <li><a href="https://www.w3schools.com/css/css_pseudo_elements.asp" target="_blank">Pseudo-elements selectors</a> (select and style a part of an element)</li>
+            
+            <!-- Enlace a la documentación de Attribute selectors -->
+            <li><a href="https://www.w3schools.com/css/css_attribute_selectors.asp" target="_blank">Attribute selectors</a> (select elements based on an attribute or attribute value)</li>
+        </ul>
+    </div>
+    
+    <!-- Línea horizontal para separar secciones -->
+    <hr>
+    
+    <!-- Sección sobre el selector de elemento -->
+    <h2 class="selector">The CSS <span>element</span> Selector</h2>
+    <p>The element selector selects HTML elements based on the element <span>name</span> (body, p, h1, h5, a, div, etc.).</p>
+    
+    <hr> <!-- Línea horizontal separadora -->
+    
+    <!-- Sección sobre el selector de id -->
+    <h2 class="selector">The CSS <span>id</span> Selector</h2>
+    <p>The id selector uses the id attribute of an HTML element to select a specific element.</p>
+    <p>The id of an element is unique within a page, so the id selector is used to select one unique element!</p>
+    <p>To select an element with a specific id, write a hash <span>(#)</span> character, followed by the id of the element.</p>
+    
+    <hr> <!-- Línea horizontal separadora -->
+    
+    <!-- Sección sobre el selector de clase -->
+    <h2 class="selector">The CSS <span>class</span> Selector</h2>
+    <p>The class selector selects HTML elements with a specific class attribute.</p>
+    <p>To select elements with a specific class, write a period <span>(.)</span> character, followed by the class name.</p>
+    
+    <hr> <!-- Línea horizontal separadora -->
+    
+    <!-- Sección sobre el selector universal con id universal -->
+    <h2 id="universal">The CSS <span>Universal</span> Selector</h2>
+    <p>The universal selector <span>(*)</span> selects all HTML elements on the page.</p>
+    
+    <!-- Contenedor con enlace -->
+    <div>
+        <p>Use our <a href="https://www.w3schools.com/cssref/trysel.asp" target="_blank">CSS Selector Tester</a> to demonstrate the different selectors.</p>
+    </div>
+    
+    <hr> <!-- Línea horizontal separadora -->
+    
+    <!-- Galería de imágenes -->
+    <div id="gallery">
+        <!-- Primera imagen: sintaxis CSS -->
+        <div>
+            <h3>CSS Syntax</h3>
+            <img src="./img/regla_css.png" alt="CSS Syntax Diagram">
+        </div>
+        
+        <!-- Segunda imagen: tabla de selectores -->
+        <div>
+            <h3>All CSS Simple Selectors</h3>
+            <img src="./img/selectors.png" alt="CSS Selectors Table">
+        </div>
+    </div>
+    
+</body>
+</html>

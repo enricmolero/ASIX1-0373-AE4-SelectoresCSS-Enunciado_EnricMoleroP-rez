@@ -1,0 +1,135 @@
+/* ===================================== */
+/* REGLA 1: Selector universal           */
+/* ===================================== */
+/* El selector universal (*) aplica estilos a todos los elementos del documento */
+* {
+    /* Cambia el tipo de fuente de todo el documento a Roboto (de Google Fonts) */
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+/* ===================================== */
+/* REGLA 2: Estilos del body             */
+/* ===================================== */
+/* El body es el contenedor principal del contenido visible */
+body {
+    /* Elimina todos los márgenes del body */
+    margin: 0;
+    /* Añade un relleno (padding) del 20% solo a izquierda y derecha */
+    /* Sintaxis: padding: arriba-abajo izquierda-derecha */
+    padding: 0 20%;
+}
+
+/* ===================================== */
+/* REGLA 3: Estilos de los h1            */
+/* ===================================== */
+/* Los títulos principales (h1) tendrán estos estilos */
+h1 {
+    /* Subraya el texto del h1 */
+    text-decoration: underline;
+    /* Color del texto en tono turquesa oscuro */
+    color: darkcyan;
+    /* Centra el texto horizontalmente */
+    text-align: center;
+}
+
+/* ===================================== */
+/* REGLA 4: Clase .selector              */
+/* ===================================== */
+/* Elementos con la clase "selector" */
+.selector {
+    /* Color del texto en tono turquesa claro */
+    color: lightcyan;
+}
+
+/* ===================================== */
+/* REGLA 5: Clase .selectors             */
+/* ===================================== */
+/* Elementos con la clase "selectors" (caja de información) */
+.selectors {
+    /* Relleno interno del 5% en todos los lados */
+    padding: 5%;
+    /* Borde sólido de 1 píxel de grosor en color turquesa oscuro */
+    border: solid darkcyan 1px;
+    /* Esquinas redondeadas con radio de 5 píxeles */
+    border-radius: 5px;
+}
+
+/* ===================================== */
+/* REGLA 6: ID #universal                */
+/* ===================================== */
+/* Elemento con el identificador "universal" */
+#universal {
+    /* Color del texto en tono amarillo dorado claro */
+    color: lightgoldenrodyellow;
+}
+
+/* ===================================== */
+/* REGLA 7: h2 con clase o id específicos */
+/* ===================================== */
+/* Selector múltiple: h2 con clase "selector" Y h2 con id "universal" */
+h2.selector,
+h2#universal {
+    /* Color de fondo turquesa oscuro */
+    background-color: darkcyan;
+    /* Relleno interno del 1% en todos los lados */
+    padding: 1%;
+    /* Esquinas redondeadas con radio de 5 píxeles */
+    border-radius: 5px;
+}
+
+/* ===================================== */
+/* REGLA 8: Elementos span               */
+/* ===================================== */
+/* Los elementos span (texto inline) tendrán estos estilos */
+span {
+    /* Grosor de fuente extra negrita (900 es el valor máximo) */
+    font-weight: 900;
+    /* Fondo negro para el span */
+    background-color: black;
+    /* Texto en color blanco para contraste */
+    color: white;
+}
+
+/* ===================================== */
+/* REGLA 9: Enlaces hijos directos de li */
+/* ===================================== */
+/* Selector de hijo directo (>): solo enlaces que son hijos directos de <li> */
+li > a {
+    /* Elimina el subrayado de los enlaces */
+    text-decoration: none;
+}
+
+/* ===================================== */
+/* REGLA 10: Elementos h3                */
+/* ===================================== */
+/* Todos los subtítulos h3 */
+h3 {
+    /* Color de fondo turquesa con transparencia (rgba: rojo, verde, azul, alfa) */
+    background-color: rgba(0, 139, 139, 0.529);
+    /* Relleno interno de 0.5 píxeles */
+    padding: 0.5px;
+    /* Esquinas redondeadas con radio de 5 píxeles */
+    border-radius: 5px;
+}
+
+/* ===================================== */
+/* REGLA 11: Divs descendientes de #gallery */
+/* ===================================== */
+/* Selector descendiente: divs que están dentro de un elemento con id "gallery" */
+#gallery div {
+    /* Ancho del 100% del contenedor padre */
+    width: 100%;
+}
+
+/* ===================================== */
+/* REGLA 12: Todas las imágenes          */
+/* ===================================== */
+/* Aplica estilos a todos los elementos <img> */
+img {
+    /* Ancho del 100% del contenedor padre (responsive) */
+    width: 100%;
+    /* Borde sólido de 1 píxel en color turquesa oscuro */
+    border: solid darkcyan 1px;
+    /* Esquinas redondeadas con radio de 5 píxeles */
+    border-radius: 5px;
+}
